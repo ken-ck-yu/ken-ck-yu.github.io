@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-    mode === 'production' &&
+    mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
   resolve: {
@@ -19,7 +19,7 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/ken-ck-yu.github.io/'
+  base: '/'
 }));
 
 // import { defineConfig } from 'vite';
