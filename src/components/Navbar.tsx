@@ -15,14 +15,11 @@ const Navbar = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
+            <a href="#preview" className="text-muted-foreground hover:text-foreground transition-colors">
+              Preview
+            </a>
             <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
               Features
-            </a>
-            <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
-              Pricing
-            </a>
-            <a href="#docs" className="text-muted-foreground hover:text-foreground transition-colors">
-              Documentation
             </a>
             <a 
               href="https://github.com/ken-ck-yu/Teemo-Ops" 
@@ -35,11 +32,12 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center space-x-3">
-            <Button variant="ghost" size="sm">
-              Sign In
-            </Button>
-            <Button variant="hero" size="sm">
-              Get Started
+            <Button 
+              variant="hero" 
+              size="sm"
+              onClick={() => window.open('https://github.com/ken-ck-yu/Teemo-Ops', '_blank')}
+            >
+              Follow Progress
             </Button>
           </div>
         </div>

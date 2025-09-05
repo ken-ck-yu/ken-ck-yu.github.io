@@ -19,7 +19,7 @@ const Hero = () => {
           {/* Badge */}
           <Badge variant="outline" className="mb-6 px-4 py-2 text-sm">
             <Zap className="w-4 h-4 mr-2" />
-            ML Training Cost Optimization
+            In Development
           </Badge>
           
           {/* Main Heading */}
@@ -33,53 +33,35 @@ const Hero = () => {
           
           {/* Subtitle */}
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            Analyze your Python ML training scripts and get precise cost estimates, 
+            We're building a tool to analyze Python ML training scripts and provide precise cost estimates, 
             resource requirements, and optimization recommendations across major cloud providers.
           </p>
           
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-              Try Demo <ArrowRight className="w-5 h-5 ml-2" />
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="text-lg px-8 py-4"
+              onClick={() => document.getElementById('preview')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              View Preview <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-4">
-              View Documentation
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="text-lg px-8 py-4"
+              onClick={() => window.open('https://github.com/ken-ck-yu/Teemo-Ops', '_blank')}
+            >
+              View on GitHub
             </Button>
           </div>
           
-          {/* Quick Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
-            <Card className="p-4 bg-card/50 backdrop-blur-sm border border-border/50">
-              <div className="flex items-center justify-center mb-2">
-                <DollarSign className="w-6 h-6 text-success" />
-              </div>
-              <div className="text-2xl font-bold text-foreground">70%</div>
-              <div className="text-sm text-muted-foreground">Cost Savings</div>
-            </Card>
-            
-            <Card className="p-4 bg-card/50 backdrop-blur-sm border border-border/50">
-              <div className="flex items-center justify-center mb-2">
-                <Clock className="w-6 h-6 text-primary" />
-              </div>
-              <div className="text-2xl font-bold text-foreground">5min</div>
-              <div className="text-sm text-muted-foreground">Analysis Time</div>
-            </Card>
-            
-            <Card className="p-4 bg-card/50 backdrop-blur-sm border border-border/50">
-              <div className="flex items-center justify-center mb-2">
-                <Cpu className="w-6 h-6 text-warning" />
-              </div>
-              <div className="text-2xl font-bold text-foreground">3</div>
-              <div className="text-sm text-muted-foreground">Cloud Providers</div>
-            </Card>
-            
-            <Card className="p-4 bg-card/50 backdrop-blur-sm border border-border/50">
-              <div className="flex items-center justify-center mb-2">
-                <Zap className="w-6 h-6 text-primary-glow" />
-              </div>
-              <div className="text-2xl font-bold text-foreground">Auto</div>
-              <div className="text-sm text-muted-foreground">Optimization</div>
-            </Card>
+          {/* Development Status */}
+          <div className="text-center">
+            <p className="text-muted-foreground text-lg mb-8">
+              🚧 Currently in development - Follow our progress on GitHub
+            </p>
           </div>
         </div>
       </div>

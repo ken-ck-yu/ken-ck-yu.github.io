@@ -17,38 +17,38 @@ const Features = () => {
     {
       icon: <FileCode className="w-8 h-8" />,
       title: "Script Analysis",
-      description: "Upload your Python ML training scripts and get instant analysis of training parameters, model architecture, and resource requirements.",
-      badge: "Core Feature"
+      description: "Upload Python ML training scripts and get instant analysis of training parameters, model architecture, and resource requirements.",
+      badge: "In Progress"
     },
     {
       icon: <DollarSign className="w-8 h-8" />,
       title: "Cost Estimation",
-      description: "Get precise cost estimates for training across AWS, Google Cloud, and Microsoft Azure with real-time pricing data.",
-      badge: "Popular"
+      description: "Precise cost estimates for training across AWS, Google Cloud, and Microsoft Azure with real-time pricing data.",
+      badge: "Planned"
     },
     {
       icon: <BarChart3 className="w-8 h-8" />,
       title: "Resource Planning",
-      description: "Understand GPU, CPU, memory, and storage requirements before you start training. Plan your infrastructure needs accurately.",
-      badge: "Essential"
+      description: "Understand GPU, CPU, memory, and storage requirements before training starts. Plan infrastructure needs accurately.",
+      badge: "Planned"
     },
     {
       icon: <Zap className="w-8 h-8" />,
       title: "Optimization Recommendations",
-      description: "Receive actionable suggestions to reduce training costs and improve efficiency with LoRA parameters, batch sizes, and precision settings.",
-      badge: "AI-Powered"
+      description: "Actionable suggestions to reduce training costs and improve efficiency with LoRA parameters, batch sizes, and precision settings.",
+      badge: "In Development"
     },
     {
       icon: <GitBranch className="w-8 h-8" />,
       title: "GitHub Integration",
-      description: "Seamlessly integrate with your development workflow. Get cost impact analysis on pull requests and track changes over time.",
-      badge: "DevOps"
+      description: "Planned integration with development workflows. Cost impact analysis on pull requests and change tracking over time.",
+      badge: "Future"
     },
     {
       icon: <Leaf className="w-8 h-8" />,
       title: "Environmental Impact",
-      description: "Monitor energy consumption and carbon footprint of your ML training jobs. Make environmentally conscious decisions.",
-      badge: "Sustainability"
+      description: "Planned monitoring of energy consumption and carbon footprint of ML training jobs for environmentally conscious decisions.",
+      badge: "Future"
     }
   ];
 
@@ -61,15 +61,14 @@ const Features = () => {
             Features
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Everything you need for
+            Planned features for
             <span className="bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
               {" "}cost-efficient{" "}
             </span>
             ML training
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            From script analysis to optimization recommendations, Teemo-Ops provides comprehensive 
-            insights to help you train ML models efficiently and cost-effectively.
+            We're developing comprehensive insights to help you train ML models efficiently and cost-effectively.
           </p>
         </div>
 
