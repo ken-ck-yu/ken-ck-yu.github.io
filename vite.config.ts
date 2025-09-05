@@ -21,11 +21,3 @@ export default defineConfig(({ mode }) => ({
   },
   base: '/'
 }));
-
-// import { defineConfig } from 'vite';
-// import react from '@vitejs/plugin-react-swc';
-
-// export default defineConfig({
-//   plugins: [react()],
-//   base: '/ken-ck-yu.github.io/', // <-- set to your repo name!
-// });
