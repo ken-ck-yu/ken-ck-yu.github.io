@@ -1,16 +1,20 @@
-import Navbar from "@/components/Navbar";
+import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import ToolPreview from "@/components/ToolPreview";
+import Problem from "@/components/Problem";
 import Features from "@/components/Features";
+import Integrations from "@/components/Integrations";
 import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
-      <Hero />
-      <ToolPreview />
-      <Features />
+      <Header />
+      <main>
+        <Hero />
+        <Problem />
+        <Features />
+        <Integrations />
+      </main>
       <Footer />
     </div>
   );
